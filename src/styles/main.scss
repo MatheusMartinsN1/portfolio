@@ -1,0 +1,15 @@
+@use 'header';
+@use 'cards';
+@use 'variaveis';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+}

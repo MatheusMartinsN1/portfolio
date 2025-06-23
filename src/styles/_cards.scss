@@ -1,0 +1,58 @@
+@use 'variaveis';
+
+.main {
+    background: linear-gradient(to bottom, variaveis.$backGroundColorDegrade2, variaveis.$backGroundColorDegrade3);
+
+    h2 {
+        text-align: center;
+        padding: 18px;
+    }
+
+    &__container {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        width: 100%;
+        padding: 10px 32px;
+        place-items: center;
+
+        &__card {
+            background-color: #fff;
+            border: 3px solid #000;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 400px;
+            height: 735px;
+
+            h3 {
+                font-size: 1.5em;
+                padding: 10px;
+                border-bottom: 3px solid #000;
+            }
+
+            iframe {
+                height: 500px;
+                width: 420px;
+            }
+
+            p {
+                padding: 10px;
+                border-top: 3px solid #000;
+            }
+
+            a {
+                display: inline-block;
+                transition: all 0.3s ease;
+                padding: 8px;
+                margin: 0px 6px;
+                border-radius: 6px;
+                background-color: variaveis.$backGroundColorDegrade3;
+            }
+
+            a:hover {
+                transform: translateY(-4px);
+            }
+        }
+    }
+}
