@@ -62,4 +62,27 @@
             }
         }
     }
+    // Responsividade do Tablet
+    @media (max-width: 1024px) {
+
+        &__container {
+
+            &__item {
+                width: 70vw;
+            }
+        }
+    }
+    // Responsividade do Tablet
+
+    // Responsividade do Mobile
+    @media (max-width: 767px) {
+
+        &__container {
+
+            &__item {
+                width: 100%;
+            }
+        }
+    }
+    // Responsividade do Mobile
 }

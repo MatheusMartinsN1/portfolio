@@ -54,5 +54,32 @@
                 transform: translateY(-4px);
             }
         }
+
     }
+
+    // Responsividade do Tablet
+    @media (max-width: 1024px) {
+
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+
+            &__card {
+                width: 350px;
+            }
+        }
+    }
+    // Responsividade do Tablet
+
+    // Responsividade do Mobile
+    @media (max-width: 767px) {
+
+        &__container {
+            grid-template-columns: repeat(1, 1fr);
+
+            &__card {
+                width: 320px;
+            }
+        }
+    }
+    // Responsividade do Mobile
 }
