@@ -11,11 +11,12 @@
     &__container {
         display: grid;
         text-align: center;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 24px;
         width: 100%;
         padding: 10px 32px;
         place-items: center;
+        margin: 0px 10px;
 
         &__card {
             background-color: #fff;
