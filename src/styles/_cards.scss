@@ -3,20 +3,39 @@
 .main {
     background: linear-gradient(to bottom, variaveis.$backGroundColorDegrade2, variaveis.$backGroundColorDegrade3);
 
-    h2 {
+    &__buttons {
         text-align: center;
-        padding: 18px;
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            h2 {
+                text-align: center;
+                padding: 20px;
+            }
+        }
     }
 
     &__container {
-        display: grid;
+        display: none;
         text-align: center;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 24px;
         width: 100%;
         padding: 10px 32px;
         place-items: center;
-        margin: 0px 10px;
+        overflow: hidden;
+
+        &.active {
+            display: grid;
+        }
 
         &__card {
             background-color: #fff;
@@ -69,6 +88,7 @@
             }
         }
     }
+
     // Responsividade do Tablet
 
     // Responsividade do Mobile
@@ -82,5 +102,6 @@
             }
         }
     }
+
     // Responsividade do Mobile
 }

@@ -48,11 +48,21 @@
     <!--MAIN-->
     <main class="main">
 
-        <h2>Projetos principais</h2>
+        <!--Botões-->
+        <section class="main__buttons">
+            <button class="btn" data-target="cards">
+                <h2>Projetos principais</h2>
+            </button>
+            <button class="btn" data-target="sobre-mim">
+                <h2>Sobre mim</h2>
+            </button>
+        </section>
+        <!--Botões-->
 
-        <div class="main__container" data-aos="zoom-in">
+        <!--Section Projetos-->
+        <section id="cards" class="main__container active" data-aos="zoom-in">
             <!--Projeto Disney+-->
-            <div class="main__container__card">
+            <article class="main__container__card">
                 <h3>Clone do Disney+</h3>
                 <iframe src="https://projeto-clone-disneyplus-delta.vercel.app" frameborder="0" loading="lazy">
                     <a href="https://projeto-clone-disneyplus-delta.vercel.app/" target="_blank">
@@ -71,11 +81,11 @@
                 <a href="https://github.com/MatheusMartinsN1/projeto_clone_disneyplus" target="_blank">
                     Código-fonte!
                 </a>
-            </div>
+            </article>
             <!--Projeto Disney+-->
 
             <!--Projeto Truck-->
-            <div class="main__container__card">
+            <article class="main__container__card">
                 <h3>Projeto Truck</h3>
                 <iframe src="https://projeto-truck.vercel.app/" sandbox="sandbox" frameborder="0" loading="lazy">
                     <a href="https://projeto-truck.vercel.app/" target="_blank">
@@ -94,11 +104,11 @@
                 <a href="https://github.com/MatheusMartinsN1/projeto-truck" target="_blank">
                     Código-fonte!
                 </a>
-            </div>
+            </article>
             <!--Projeto Truck-->
 
             <!--Projeto Sanchez-->
-            <div class="main__container__card">
+            <article class="main__container__card">
                 <h3>Projeto Sanchez</h3>
                 <iframe src="https://projeto-sanchez.vercel.app/" frameborder="0" loading="lazy">
                     <a href="https://projeto-sanchez.vercel.app/" target="_blank">
@@ -118,11 +128,11 @@
                 <a href="https://github.com/MatheusMartinsN1/projeto-sanchez" target="_blank">
                     Código-fonte!
                 </a>
-            </div>
+            </article>
             <!--Projeto Sanchez-->
 
             <!--Giga Byte-->
-            <div class="main__container__card">
+            <article class="main__container__card">
                 <h3>Projeto Giga Byte</h3>
                 <iframe src="https://giga-byte-lake.vercel.app/" frameborder="0" loading="lazy">
                     <a href="https://giga-byte-lake.vercel.app/" target="_blank">
@@ -131,7 +141,8 @@
                 </iframe>
                 <p>
                     Neste projeto, desenvolvi o site oficial de uma sorveteria real localizada na minha cidade. O
-                    objetivo foi criar uma página moderna e responsiva. Foram utilizadas as seguintes tecnologias: HTML, SASS,
+                    objetivo foi criar uma página moderna e responsiva. Foram utilizadas as seguintes tecnologias: HTML,
+                    SASS,
                     JavaScript, jQuery e Gulp.
                     <br>
                 </p>
@@ -141,18 +152,68 @@
                 <a href="https://github.com/MatheusMartinsN1/giga-byte" target="_blank">
                     Código-fonte!
                 </a>
-            </div>
+            </article>
             <!--Giga Byte-->
-        </div>
+        </section>
+        <!--Section Projetos-->
+
+        <!--Section Sobre mim-->
+        <section class="main__container main__about" id="sobre-mim">
+            <article class="main__about__content">
+                <h2>Sobre Mim</h2>
+
+                <p>
+                    Olá! Me chamo Matheus Martins, sou desenvolvedor Front-End apaixonado por tecnologia, design e pela
+                    capacidade que a programação tem de transformar ideias em realidade. Minha jornada na área começou
+                    com a curiosidade de entender como os sites eram feitos, e desde então mergulhei de cabeça no mundo
+                    do desenvolvimento web.
+                </p>
+                <p>
+                    Ao longo dessa jornada, fui me especializando em tecnologias como HTML, CSS, SASS e JavaScript,
+                    sempre buscando não apenas saber escrever código, mas também entender boas práticas, padrões e a
+                    importância de uma boa experiência para quem vai acessar o site. Além disso, utilizo ferramentas
+                    como Gulp e Bootstrap para otimizar processos e garantir que os projetos sejam bem organizados e
+                    responsivos.
+                </p>
+                <p>
+                    Já tive a oportunidade de desenvolver um projeto real, um freelance para uma sorveteria da minha
+                    cidade, o
+                    que me ensinou muito sobre responsabilidade, organização e o valor de uma entrega bem feita. Cada
+                    projeto que participo é uma chance de aprender mais e de colocar em prática tudo o que venho
+                    estudando.
+                </p>
+                <p>
+                    Hoje, busco uma oportunidade profissional como desenvolvedor Front-End em regime CLT, onde eu possa
+                    atuar em equipe, aprender com profissionais mais experientes e também contribuir com tudo que já
+                    aprendi. Meu foco é evoluir constantemente, tanto tecnicamente quanto profissionalmente.
+                </p>
+                <p>
+                    Além das habilidades técnicas, acredito que meu diferencial está na dedicação e no comprometimento.
+                    Tenho facilidade em me comunicar, sou organizado, aprendo rápido e gosto de trabalhar com foco em
+                    resultados. Para
+                    mim, desenvolver um site não é só programar; é participar da criação de algo que realmente vai
+                    impactar pessoas e negócios.
+                </p>
+                <p>
+                    Estou sempre buscando novas formas de aprimorar meu trabalho, estudando novas tecnologias e
+                    acompanhando tendências do mercado. Meu objetivo é crescer junto com a empresa, agregar valor aos
+                    projetos e me tornar um profissional cada vez mais completo.
+                </p>
+                <p>
+                    Se você procura alguém comprometido, disposto a aprender e a contribuir com qualidade e
+                    responsabilidade, será um prazer fazer parte da sua equipe.
+                </p>
+            </article>
+
+            <img src="https://avatars.githubusercontent.com/u/181529970?v=4" alt="Matheus Martins">
+        </section>
+        <!--Section Sobre mim-->
 
     </main>
     <!--MAIN-->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
+    <script src="./build/scripts/main.js"></script>
 </body>
 
 </html>

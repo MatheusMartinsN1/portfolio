@@ -1,0 +1,76 @@
+@use 'variaveis';
+
+.main {
+    background: linear-gradient(to bottom, variaveis.$backGroundColorDegrade2, variaveis.$backGroundColorDegrade3);
+
+    &__about {
+        margin: 0px auto;
+        padding: 40px 0px;
+        width: 70%;
+
+        &#sobre-mim.active {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 20px;
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 8px;
+            font-size: 1.2em;
+        }
+
+        img {
+            width: 350px;
+            border-radius: 50%;
+            border: 3px solid #000;
+            animation: girar 12s linear infinite;
+        }
+    }
+
+    @media (max-width: 1024px) {
+
+        &__about {
+
+            &#sobre-mim.active {
+                display: block;
+            }
+
+            img {
+                margin: 40px 0px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        &__about {
+            width: auto;
+            padding: 0px 18px;
+
+            &#sobre-mim.active {
+                display: block;
+            }
+
+            img {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
