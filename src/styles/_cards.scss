@@ -10,6 +10,9 @@
             background-color: transparent;
             border: none;
             cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 8px;
+            margin: 10px;
             transition: transform 0.5s ease;
 
             &:hover {
@@ -18,7 +21,7 @@
 
             h2 {
                 text-align: center;
-                padding: 20px;
+                padding: 6px;
             }
         }
     }
