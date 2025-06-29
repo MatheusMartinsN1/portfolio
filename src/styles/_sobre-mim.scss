@@ -30,7 +30,11 @@
             width: 350px;
             border-radius: 50%;
             border: 3px solid #000;
-            animation: girar 12s linear infinite;
+            transition: transform 2s ease;
+
+            &:hover {
+                transform: rotate(360deg);
+            }
         }
     }
 
