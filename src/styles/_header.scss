@@ -43,7 +43,6 @@
                     transform-origin: left;
                 }
             }
-
         }
 
         &__item {
@@ -60,8 +59,17 @@
                 text-indent: 8px;
                 font-size: 1.2em;
             }
+
+            img {
+                width: 200px;
+                border-radius: 50%;
+                border: 3px solid #000;
+                margin: 10px auto;
+                display: block;
+            }
         }
     }
+
     // Responsividade do Tablet
     @media (max-width: 1024px) {
 
@@ -72,6 +80,7 @@
             }
         }
     }
+
     // Responsividade do Tablet
 
     // Responsividade do Mobile
@@ -84,5 +93,6 @@
             }
         }
     }
+
     // Responsividade do Mobile
 }
