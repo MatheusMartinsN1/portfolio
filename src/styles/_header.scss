@@ -59,13 +59,20 @@
                 text-indent: 8px;
                 font-size: 1.2em;
             }
+        }
+
+        &__imagens {
+            text-align: center;
+            margin: 12px 0px;
 
             img {
-                width: 200px;
-                border-radius: 50%;
-                border: 3px solid #000;
-                margin: 10px auto;
-                display: block;
+                height: 180px;
+                transition: transform 0.5s ease;
+                margin: 0px 12px;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -77,6 +84,13 @@
 
             &__item {
                 width: 70vw;
+            }
+
+            &__imagens {
+                
+                img {
+                    height: 150px;
+                }
             }
         }
     }
@@ -90,6 +104,13 @@
 
             &__item {
                 width: 100%;
+            }
+
+            &__imagens {
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }
